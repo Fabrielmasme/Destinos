@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Sirve para controlar el tamaño de todas las cajas automaticamente */
+
+    /* font-family: 'Poppins','Roboto',sans-serif; */
+}
+body{
+    font-family: 'Poppins','Roboto',sans-serif;
+}
+/*Cambia todos los links a negro y saca el subrrayado */
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+/* Se cambian el tamaño de los iconos de toda la pagina */
+
+#icono{
+    height: 20px;
+    padding: 2px 4px 3px 2px;
+}
+
+/*Se le pone estilo del encabezado*/
+
+header{
+    background-color: rgb(101, 212, 175);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px; 
+}
+
+/*Palabra destinos (Logo)*/
+
+.destinos{
+    font-size: 40px;
+}
+
+/* Se modifica el boton de iniciar sesion */
+
+#boton_iniciar_sesion{
+    padding: 2px 6px;
+    background-color:#59b2a2;
+    border: 1px solid #59b2a2;
+}
+
+/* Se modifica el logo del boton de iniciar sesion */
+
+.logo{
+    display: flex;
+    align-items: center;
+    padding: 2px 4px;
+}
+
+/* Se le da una pseudo-clase a los links en el header para que cambie de color cuando pasa el cursor por arriba*/
+
+header a:hover{
+    color: rgb(255, 255, 255);
+}
+
+/*Se pone estilos al NAV*/
+
+nav{
+    height:60px ;
+    width: 100%;
+}
+
+ /*Barra de NAV*/
+
+#barra_de_navegacion{
+    width: 100%;
+    height: 60px;
+    background-color:#59b2a2;
+
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*Las cajas de las barras del NAV*/
+
+    nav #barra_de_navegacion a{
+        margin: 10px;
+        padding: 10px; 
+        display: flex;
+        flex-direction: column;
+} 
+
+/* Establece el color de fondo predeterminado para los enlaces */
+
+nav #barra_de_navegacion article :hover{
+
+    color:white;
+ }    
+
+ /*SE COMIENZA A DARLE ESTILOS AL MAIN*/
+
+ main{
+    width: 100%;
+    height: 1000px;
+    background-color: red;
+ }
+
+ /*BANNER DE RUSHER*/
+
+main section #banner{
+    width: 100%;
+    height: 300px;
+ }
+
+/*FORMULARIO DE BUSQUEDA*/
+
+#formulario_de_busqueda{
+    width: 100%;
+    height: 250px;
+    background-color: #a780ff;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: white;
+    font-size: 20px;
+}
+
+    #formulario_de_busqueda form{
+        width: 1000px;
+        height: 150px;
+        background-color: #270570;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+}
+        #formulario_de_busqueda label input{
+            width: 200px;
+            height: 50px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+} 
+/*BOTON DEL FORMULARIO DE BUSQUEDA*/
+button{
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    background-color:#e12b19;
+    color: white;
+    font-size: 20px;
+}
+
