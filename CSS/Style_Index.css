@@ -2,26 +2,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; /*Sirve para controlar el tamaño de todas las cajas automaticamente */
-
-    /* font-family: 'Poppins','Roboto',sans-serif; */
+    list-style: none;
 }
 body{
     font-family: 'Poppins','Roboto',sans-serif;
 }
+
 /*Cambia todos los links a negro y saca el subrrayado */
+
 a{
     text-decoration: none;
     color: black;
     font-weight: 600;
 }
 
-/* Se cambian el tamaño de los iconos de toda la pagina */
 
-#icono{
-    height: 20px;
-    padding: 2px 4px 3px 2px;
-}
 
+ 
 /*Se le pone estilo del encabezado*/
 
 header{
@@ -34,13 +31,27 @@ header{
     padding: 20px; 
 }
 
+
+/* Se le da una pseudo-clase a los links en el header para que cambie de color cuando pasa el cursor por arriba*/
+
+header a:hover{
+    color: rgb(255, 255, 255);
+}
+
+
+ /*SE COMIENZA A DARLE ESTILOS AL MAIN*/
+ 
+ main{
+    width: 100%;
+    height: 100%;
+ }
 /*Palabra destinos (Logo)*/
 
-.destinos{
+#Destinos{
     font-size: 40px;
 }
 
-/* Se modifica el boton de iniciar sesion */
+/* Se modifica la caja de boton de iniciar sesion */
 
 #boton_iniciar_sesion{
     padding: 2px 6px;
@@ -56,11 +67,15 @@ header{
     padding: 2px 4px;
 }
 
-/* Se le da una pseudo-clase a los links en el header para que cambie de color cuando pasa el cursor por arriba*/
+/* Se cambian el tamaño de los iconos de toda la pagina */
 
-header a:hover{
-    color: rgb(255, 255, 255);
-}
+.icono{
+    height: 20px;
+    display: flex;
+    align-items: center;
+    padding: 2px 4px; 
+} 
+
 
 /*Se pone estilos al NAV*/
 
@@ -98,59 +113,444 @@ nav #barra_de_navegacion article :hover{
     color:white;
  }    
 
- /*SE COMIENZA A DARLE ESTILOS AL MAIN*/
-
- main{
-    width: 100%;
-    height: 1000px;
-    background-color: red;
- }
-
  /*BANNER DE RUSHER*/
+.hero-banner{
+    height:300px;
+}
 
 main section #banner{
     width: 100%;
     height: 300px;
  }
 
+
 /*FORMULARIO DE BUSQUEDA*/
 
 #formulario_de_busqueda{
     width: 100%;
-    height: 250px;
+    height: 320px;
     background-color: #a780ff;
-    font-size: 15px;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center; 
     color: white;
     font-size: 20px;
 }
-
     #formulario_de_busqueda form{
-        width: 1000px;
-        height: 150px;
+        width: 1250px;
+        height: 250px;
         background-color: #270570;
         border-radius: 20px;
         display: flex;
+        flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        
+    
 }
         #formulario_de_busqueda label input{
-            width: 200px;
-            height: 50px;
-            display: flex;
-            flex-direction: column;
+            width: 180px;
+            height: 60px;
             border-radius: 10px;
-} 
+            border: none;
+            margin-right: 10px;
+}
+
+#formulario_de_busqueda form h2{
+    font-size: 30px;
+    margin: 10px 500px 0px 0px;
+}
+
 /*BOTON DEL FORMULARIO DE BUSQUEDA*/
-button{
+#boton_form_de_busqueda{ 
     width: 100px;
-    height: 40px;
+    height: 50px;
     border-radius: 20px;
     background-color:#e12b19;
     color: white;
     font-size: 20px;
+    border: none;
+    margin: 25px 0px 0px 1080px;
 }
 
+/*Se le da el efecto al boton BUSCAR del formulario*/
+ #boton_form_de_busqueda:hover{ 
+    background-color: #e74a3c;
+} 
+
+
+
+
+
+/*Se le da estilos a la seccion de vuelos*/
+#contenedor_de_vuelos{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedor_de_vuelos #caja_de_tarjetas h2{
+    font-size: 70px;
+    margin: 10px;
+
+}
+
+
+/*Se le da estilos A TODA LA CAJA DE LAS TARJETAS*/
+
+
+#caja_de_tarjetas{
+    width: 1850px;
+    height: 900px;
+    margin: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+} 
+
+
+#contenedor_de_vuelos #caja_de_tarjetas section{
+    width: 1800px;
+    height: 700px;
+    margin: 10px;
+    background-color: #270570;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+#contenedor_de_vuelos #caja_de_tarjetas section .caja_de_vuelos{
+    width: 300px;
+    height: 500px;
+    display: flex;
+    margin: 10px;
+    border-radius: 20px;
+
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: antiquewhite;
+
+}
+
+/*Se reduce el tamaño de las imagenes de los vuelos*/
+#contenedor_de_vuelos .caja_de_vuelos img{
+    width: 260px;
+    height: 210px;
+    margin-top:10px;
+}
+
+#contenedor_de_vuelos .caja_de_vuelos h3{
+    font-size: 20px;
+    padding: 10px;
+    margin: 20px;
+}
+
+
+/*Se le de estilos a TODOS los Botones VER MÁS*/
+
+#boton_ver_más{ 
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    background-color:#e12b19;
+    color: white;
+    font-size: 20px;
+    border: none;
+    margin: 600px 10px 0px 0px;
+}
+
+#boton_ver_más:hover{ 
+    background-color: #e74a3c;
+} 
+
+
+
+/*SECCION DE ALOJAMIENTO*/
+
+#contenedor_de_alojamiento{
+    width: 100%;
+    height: 1000px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedor_de_alojamiento #caja_de_tarjetas h2{
+    font-size: 70px;
+    margin: 10px;
+}
+
+/*Ya se le dio el estilo de las tarjetas*/
+
+
+#contenedor_de_alojamiento #caja_de_tarjetas section{
+    width: 1800px;
+    height: 700px;
+    margin: 10px;
+    background-color: #270570; 
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#contenedor_de_alojamiento #caja_de_tarjetas section .caja_de_alojamiento{
+    width: 300px;
+    height: 500px;
+    display: flex;
+    margin: 10px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+#contenedor_de_alojamiento .caja_de_alojamiento img{
+    width: 240px;
+    height: 250px;
+    margin-top:10px;
+}
+
+#contenedor_de_alojamiento .caja_de_alojamiento h3{
+    font-size: 20px;
+    padding: 10px;
+    margin: 20px;
+    
+}
+
+
+
+/*SECCION DE ACTIVIDADES*/
+
+#contenedor_de_actividades{
+    width: 100%;
+    height: 1000px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedor_de_actividades #caja_de_tarjetas h2{
+    font-size: 70px;
+    margin: 10px;
+}
+
+/*Ya se le dio el estilo de las tarjetas*/
+
+
+#contenedor_de_actividades #caja_de_tarjetas section{
+    width: 1800px;
+    height: 700px;
+    margin: 10px;
+    background-color: #270570;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#contenedor_de_actividades #caja_de_tarjetas section .caja_de_actividades{
+    width: 300px;
+    height: 500px;
+    display: flex;
+    margin: 10px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+#contenedor_de_actividades .caja_de_actividades img{
+    width: 260px;
+    height: 210px;
+    margin-top:10px;
+}
+
+#contenedor_de_actividades .caja_de_actividades h3{
+    font-size: 20px;
+    padding: 10px;
+    margin: 20px;
+}
+
+
+
+
+/*SECCION ALQUILER DE AUTOS*/
+
+#contenedor_de_autos{
+    width: 100%;
+    height: 1000px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedor_de_autos #caja_de_tarjetas h2{
+    font-size: 70px;
+    margin: 10px;
+}
+
+/*Ya se le dio el estilo de las tarjetas*/
+
+
+#contenedor_de_autos #caja_de_tarjetas section{
+    width: 1800px;
+    height: 700px;
+    margin: 10px;
+    background-color: #270570; 
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#contenedor_de_autos #caja_de_tarjetas section .caja_de_autos{
+    width: 300px;
+    height: 500px;
+    display: flex;
+    margin: 10px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+#contenedor_de_autos .caja_de_autos img{
+    width: 240px;
+    height: 250px;
+    margin-top:10px;
+}
+
+#contenedor_de_autos .caja_de_autos h3{
+    font-size: 20px;
+    padding: 10px;
+    margin: 20px;
+    
+}
+
+
+
+
+
+/*NOSOTROS*/
+#caja_nosotros{
+    width: 100%;
+    height: 1000px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#caja_nosotros #nosotros{
+    width: 1800px;
+    height: 970px;
+    background-color: #270570; 
+    border-radius: 20px;
+}
+#caja_nosotros #nosotros h3{
+    margin: 20px 0px 40px 800px;
+    font-size: 70px;
+    color: white;
+}
+
+#caja_nosotros #nosotros p{
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+}
+#caja_nosotros #nosotros p b{
+    font-size: 25px;
+}
+
+
+
+/*FOOTER*/
+footer{
+    width: 100%;
+    height: 500px;
+    background-color: #2A2F51;
+    padding: 80px;
+}
+
+footer h3{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 25px;
+    padding-bottom: 1;
+    border-bottom: 2px solid #00c3ff;
+    display: inline-block;
+}
+
+footer a{
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    margin: 10px;
+
+}
+footer a:hover{
+    color: #00c3ff;
+}
+
+.footer-links section{
+    margin-left: 15px;
+}
+
+.footer-links section form{
+    margin-top: 20px;
+}
+
+#container-footer{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-links{
+    width: 700px;
+}
+
+/*Se ajusta el tamaño de los iconos del footer*/
+.icono-footer{
+    width: 30px;
+    height: 30px;
+
+}
