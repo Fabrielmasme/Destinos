@@ -18,7 +18,9 @@
     
     <header>
         <a class="destinos" href="#">
-            Destinos
+            <h1 id="Destinos">
+                Destinos
+            </h1>
         </a> <!--Hay que poner la direccion del index.htmlt-->
 
         <section class="numero_de_consulta">
@@ -28,7 +30,7 @@
 
         <button id="boton_iniciar_sesion">
             <a class="logo" href="#"><!-- Hay que agregar la direccion del formulario de inicio de sesión y cambiarlo por el # -->
-                <img id="icono" src="Fuentes/ICONS/iniciar sesión.svg" alt="Logo de inicio de sesión"> <!--HAY QUE USAR EL OVERFLOW PARA DAR UN ESTILO CIRCULAR AL ICONO-->
+                <img class="icono" src="Fuentes/ICONS/iniciar sesión.svg" alt="Logo de inicio de sesión"> <!--HAY QUE USAR EL OVERFLOW PARA DAR UN ESTILO CIRCULAR AL ICONO-->
                 Iniciar Sesión
             </a>
         </button>
@@ -37,36 +39,42 @@
 
     <nav>
         <section id="barra_de_navegacion">
+
             <article>
                 <a  href="#"> <!--Hay que poner el link de la pagina de vuelos-->
-                    <img id="icono" src="Fuentes/ICONS/vuelos.svg" alt="Logo de vuelos">
+                    <img class="icono" src="Fuentes/ICONS/vuelos.svg" alt="Logo de vuelos">
                     Vuelos 
                 </a>
             </article>
+
             <article>
                 <a href="#"><!--Hay que poner el link de la pagina de alojamiento-->
-                    <img id="icono" src="Fuentes/ICONS/alojamiento.svg" alt="Logo de Alojamiento">
+                    <img class="icono" src="Fuentes/ICONS/alojamiento.svg" alt="Logo de Alojamiento">
                     Alojamiento
                 </a>
             </article>
+
             <article>
                 <a href="#"><!--Hay que poner el link de la pagina de actividades-->
-                    <img id="icono" src="Fuentes/ICONS/ticket.svg" alt="Logo de Actividaes">
+                    <img class="icono" src="Fuentes/ICONS/ticket.svg" alt="Logo de Actividaes">
                     Actividades
                 </a>
             </article>
+
             <article>
                 <a href="#"><!--Hay que poner el link de la pagina de autos-->
-                    <img id="icono" src="Fuentes/ICONS/auto.svg" alt="Logo de Autos">
+                    <img class="icono" src="Fuentes/ICONS/auto.svg" alt="Logo de Autos">
                     Autos
                 </a>
             </article>
+
             <article>
                 <a href="#"><!--Hay que poner el link de la pagina de nosotros-->
-                    <img id="icono" src="Fuentes/ICONS/nosotros.svg" alt="Logo de nosotros">
+                    <img class="icono" src="Fuentes/ICONS/nosotros.svg" alt="Logo de nosotros">
                     Nosotros
                 </a>
             </article>
+
         </section>
                 
     </nav>
@@ -80,48 +88,422 @@
             <img id="banner" src="Fuentes/IMG/HeroBanner Rusherking.jpg" alt="Banner de Rusherking">
 
         </section>
-        <!-- PRIMER FORMULARIO DE BUSQUEDA -->
+        <!-- FORMULARIO DE BUSQUEDA -->
 
         <section id="formulario_de_busqueda">
             
+            
             <form action="" method="get"> <!--En "action" se puede poner un link hacia el servidor -->
-                
-                
-                <label>
-                    Origen:
-                    <input type="text" placeholder="Ingrese origen de salida:" name="origen" required>
-                </label>
 
-                <label>
-                    Destino:
-                    <input type="text" placeholder="Ingrese destino de llegada:" name="destino" required>
-                </label>
+                 <h2>
+                    Encuentra tús mejores viajes al mejor precio:
+                </h2>
+                <section class="caja_de_label">  <!--Cualquier cosa borrar el h2 y este section asi vuelve a la normalidad-->
 
-                <label>
-                    Fecha ida:
-                    <input type="date" name="ida" required>
-                </label>
+                    <label>
+                        Origen:
+                        <input type="text" placeholder="Ingrese origen de salida:" name="origen" required>
+                    </label>
 
-                <label>
-                    Fecha vuelta:
-                    <input type="date"  name="vuelta" required>
-                </label>  
+                    <label>
+                        Destino:
+                        <input type="text" placeholder="Ingrese destino de llegada:" name="destino" required>
+                    </label>
 
-                <!-- <label id="boton_formulario" >
+                    <label>
+                        Fecha ida:
+                        <input type="date" name="ida" required>
+                    </label>
+
+                    <label>
+                        Fecha vuelta:
+                        <input type="date"  name="vuelta" required>
+                    </label>  
+
+                    <section class="caja_boton_form">
+                        <button id="boton_form_de_busqueda" type="button">
+                            Buscar
+                        </button>
+                    </section>
                     
-                    <input type="submit" value="Buscar">
-                </label> -->
+                </section>
 
-                <button type="button">
-                    <em class="texto-buscar">Buscar</em>
-                </button>
-                
             </form>
 
         </section>
-            
+
+
+        <!-- SECCION DE VUELOS -->
+
+        <section id="contenedor_de_vuelos">
+
+            <section id="caja_de_tarjetas">
+
+                <h2>
+                    Vuelos
+                </h2>
+                <section >
+
+                    <article class="caja_de_vuelos ">
+                        <h3>
+                            Vuelo disponible a las Cataratas del iguazú:
+                        </h3>
+                        <img src="Fuentes/IMG/Fotos de paisajes de argentina/Cataratas del iguazú.jpg" alt="Cataratas del Iguazú">
+                    </article>
+
+                    <article class="caja_de_vuelos">
+                        <h3>
+                            Vuelo disponible a Bariloche:
+                        </h3>
+                        <img src="Fuentes/IMG/Fotos de paisajes de argentina/Bariloche.jpg" alt="Bariloche">
+                    </article>
+
+                    <article class="caja_de_vuelos">
+                        <h3>
+                            Vuelo disponible al Cerro de los Siete Colores:
+                        </h3>
+                        <img src="Fuentes/IMG/Fotos de paisajes de argentina/Cerro de los Siete Colores.jpg" alt="Cerro de los siete colores">
+                    </article>
+
+                    <article class="caja_de_vuelos">
+
+                        <h3>
+                            Vuelo disponible al Glaciar Perito Moreno:
+                        </h3>
+                        <img src="Fuentes/IMG/Fotos de paisajes de argentina/Glaciar Perito Moreno.jpg" alt="Glaciar Perito Moreno">
+                    </article>
+
+                    <article class="caja_de_vuelos">
+                        <h3>
+                            Vuelo disponible a Mendoza:
+                        </h3>
+                        <img src="Fuentes/IMG/Fotos de paisajes de argentina/Bariloche.jpg" alt="Mendoza">
+                    </article>
+
+                    <!-- <section class="contenedor_boton_ver_más"> -->
+                        <button id="boton_ver_más" type="button">
+                            Ver Más
+                        </button> 
+    
+                    <!-- </section> -->
+
+                </section>
+    
+            </section>   
+
+        </section>
+
+         <!-- SECCION DE ALOJAMIENTO -->
+
+         <section id="contenedor_de_alojamiento">
+
+            <section id="caja_de_tarjetas">
+
+                <h2>
+                    Alojamiento
+                </h2>
+                <section >
+
+                    <article class="caja_de_alojamiento ">
+                        <h3>
+                            Alojamiento disponible en las Cataratas del Iguazú:
+                        </h3>
+                        <img src="Fuentes/IMG/Fotos de alojamiento/Alojamiento-1.jpg" alt="Alojamiento en las Cataratas del iguazú">
+                    </article>
+
+                    <article class="caja_de_alojamiento">
+                        <h3>
+                            Alojamiento disponible en Bariloche:
+                        </h3>
+                        <img src="Fuentes/IMG/Fotos de alojamiento/Alojamiento-2.jpg" alt="Alojamiento en Bariloche">
+                    </article>
+
+                    <article class="caja_de_alojamiento">
+                        <h3>
+                            Alojamiento disponible en el Cerro de los Siete Colores:
+                        </h3>
+                        <img src="Fuentes/IMG/Fotos de alojamiento/Alojamiento-3.jpg" alt="Alojamiento en el cerro de los siete colores">
+                    </article>
+
+                    <article class="caja_de_alojamiento">
+
+                        <h3>
+                            Alojamiento disponible en el Glaciar Perito Moreno:
+                        </h3>
+                        <img src="Fuentes/IMG/Fotos de alojamiento/Alojamiento-4.jpg" alt="Alojamiento en el glaciar perito moreno">
+                    </article>
+
+                    <article class="caja_de_alojamiento">
+                        <h3>
+                            Alojamiento disponible en Mendoza:
+                        </h3>
+                        <img src="Fuentes/IMG/Fotos de alojamiento/Alojamiento-5.jpg" alt="Alojamiento en Mendoza">
+                    </article>
+
+                    <button id="boton_ver_más" type="button">
+                        Ver Más
+                    </button> 
+    
+                </section>
+    
+            </section>   
+
+        </section>
+
+        <!-- SECCION DE ACTIVIDADES -->
+
+        <section id="contenedor_de_actividades">
+
+            <section id="caja_de_tarjetas">
+
+                <h2>
+                    Actividades
+                </h2>
+                <section >
+
+                    <article class="caja_de_actividades ">
+                        <h3>
+                            Paseo en bote en las Cataratas del Iguazú:
+                        </h3>
+                        <img src="Fuentes/IMG/Fotos de actividades/Paseo en bote.jpg" alt="Paseo en bote ">
+                    </article>
+
+                    <article class="caja_de_actividades">
+                        <h3>
+                            Esquí y Snowboard en Bariloche:
+                        </h3>
+                        <img src="Fuentes/IMG/Fotos de actividades/Snowboard.jpg" alt="Snowboard ">
+                    </article>
+
+                    <article class="caja_de_actividades">
+                        <h3>
+                            Senderismo en el Cerro de los Siete Colores:
+                        </h3>
+                        <img src="Fuentes/IMG/Fotos de actividades/Senderismo.jpg" alt="Senderismo ">
+                    </article>
+
+                    <article class="caja_de_actividades">
+
+                        <h3>
+                            Observacion al Glaciar Perito Moreno:
+                        </h3>
+                        <img src="Fuentes/IMG/Fotos de actividades/Observacion del glaciar.jpg" alt="Observacion al glaciar">
+                    </article>
+
+                    <article class="caja_de_actividades">
+                        <h3>
+                            Visitas a distintas bodegas en Mendoza:
+                        </h3>
+                        <img src="Fuentes/IMG/Fotos de actividades/Visitas a bodegas.jpg" alt="Visitas a bodegas">
+                    </article>
+
+                    <!-- <section class="contenedor_boton_ver_más"> -->
+                        <button id="boton_ver_más" type="button">
+                            Ver Más
+                        </button> 
+    
+                    <!-- </section> -->
+
+                </section>
+    
+            </section>   
+
+        </section>
+
+
+        <!-- SECCION DE AUTOS DE ALQUILER -->
+
+        <section id="contenedor_de_autos">
+
+            <section id="caja_de_tarjetas">
+
+                <h2>
+                    Autos
+                </h2>
+                <section >
+
+                    <article class="caja_de_autos ">
+                        <h3>
+                            Ford Focus disponible para su alquiler:
+                        </h3>
+                        <img src="Fuentes/IMG/Fotos de autos para alquiler/Ford focus.jpg" alt="Ford Focus">
+                    </article>
+
+                    <article class="caja_de_autos">
+                        <h3>
+                            Honda Civic disponible para su alquiler:
+                        </h3>
+                        <img src="Fuentes/IMG/Fotos de autos para alquiler/Honda Civic.jpg" alt="Auto Honda Civic">
+                    </article>
+
+                    <article class="caja_de_autos">
+                        <h3>
+                            Tesla modelo 3 disponible para su alquiler:
+                        </h3>
+                        <img src="Fuentes/IMG/Fotos de autos para alquiler/Tesla moldelo 3.jpg" alt="Auto Tesla modelo 3">
+                    </article>
+
+                    <article class="caja_de_autos">
+
+                        <h3>
+                            Toyota supra disponible para su alquiler:
+                        </h3>
+                        <img src="Fuentes/IMG/Fotos de autos para alquiler/Toyota Supra.jpg" alt="Auto Toyota Supra">
+                    </article>
+
+                    <article class="caja_de_autos">
+                        <h3>
+                            volkswagen Golf disponible para su alquiler:
+                        </h3>
+                        <img src="Fuentes/IMG/Fotos de autos para alquiler/volkswagen golf.jpg" alt="Auto volkswagen Golf">
+                    </article>
+
+                    <button id="boton_ver_más" type="button">
+                        Ver Más
+                    </button> 
+                  
+                </section>
+    
+            </section>   
+
+        </section>  
+
+    
+        <section id="caja_nosotros">
+
+            <article id="nosotros">
+                <h3>
+                    Nosotros
+                </h3>
+                <p>
+                    
+                    En Destinos, estamos dedicados a hacer realidad tus sueños de viaje. 
+                    <br>
+                    Somos un equipo apasionado de expertos en viajes con años de experiencia en la industria, y nuestra misión es proporcionarte experiencias de viaje inolvidables.
+                    <br>
+                    <br>
+                    <b> ¿Qué te ofrecemos? </b>
+                    <br>
+                    <br>
+                    <b> Vuelos: </b>Te conectamos con las mejores tarifas y opciones de vuelos, permitiéndote encontrar las rutas más convenientes y los precios más competitivos para tu próximo viaje.
+                    <br>
+                    <br>
+                    <b> Alojamiento: </b>Ofrecemos una cuidadosa selección de alojamientos que se adaptan a todos los gustos y presupuestos, desde hoteles boutique hasta apartamentos con encanto y albergues asequibles.
+                    <br>
+                    <br>
+                    <b> Actividades: </b> ¿Buscas experiencias únicas en tu destino? Te proporcionamos una amplia variedad de actividades emocionantes y culturales para que tu viaje sea verdaderamente inolvidable.
+                    <br>
+                    <br>
+                    <b> Alquiler de Autos: </b>Si deseas explorar a tu propio ritmo, te facilitamos el alquiler de autos en tu lugar de destino, brindándote la libertad de moverte como desees.
+                    <br>
+                    <br>
+                    En Destinos, creemos en la importancia de cada detalle para que tu viaje sea perfecto. Nuestros agentes de viajes están comprometidos en proporcionarte asesoramiento personalizado y servicio al cliente excepcional. Ya sea que estés planeando unas vacaciones en familia, una escapada romántica o un viaje de negocios, estamos aquí para convertir tus sueños de viaje en realidad.
+                    <br>
+                    Nuestro compromiso es ofrecerte calidad, confiabilidad y comodidad en cada viaje que emprendas. ¡Bienvenido a Destinos donde tus aventuras comienzan y los recuerdos duran toda la vida!"
+
+                </p>
+            </article>
+        </section>
+        
     </main>
-    <footer></footer>
+
+    <footer>
+        <section id="container-footer">
+
+            <section class="footer-links">
+                <a class="destinos" href="#">
+                    <h3>
+                        Destinos
+                    </h3>
+                </a>
+                <section>
+                    <ul>
+                        <li><h4>Consultas:</h4></li>
+                        <li><h4>0810-000-0000</h4></li>
+                        <form action="" method="get">
+                            <h4>Las mejores ofertas en su email:</h4>
+                            <label>
+                        
+                                <img class="icono-footer" src="Fuentes/ICONS/email-1-svgrepo-com.svg" alt="Icono de email">
+
+                                <input type="text" placeholder="Ingrese su Email:" name="origen" required>
+
+                                <button type="button" name="button" >Subscribirse</button>
+
+                            </label>
+
+                        </form>
+
+                    </ul>
+                </section>
+            </section>
+
+            <section class="footer-links">
+                <h3>Proporcionamos</h3>
+                <ul>
+                    <li><a href="#">Vuelos</a></li>
+                    <li><a href="#">Alojamiento</a></li>
+                    <li><a href="#">Actividades</a></li>
+                    <li><a href="#">Autos</a></li>
+                    <li><a href="#">Nosotros</a></li>
+            </ul>
+            </section>
+
+            <section class="footer-links">
+                <h3>Nuestras Redes Sociales</h3>
+                <ul>
+                    
+                    <li>
+                        <a href="https://es-la.facebook.com/">
+                            <img class="icono-footer" src="Fuentes/ICONS/facebook.svg" alt="Logo de Facebook">
+                            Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/">
+                            <img class="icono-footer" src="Fuentes/ICONS/instagram.svg" alt="Logo de Instagram">
+                            Instagram
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/?logout=1696346441672">
+                            <img class="icono-footer" src="Fuentes/ICONS/x-twitter.svg" alt="Logo de Twitter o X">
+                            Twitter
+                        </a>
+                    </li>
+                    <h3>Linkedin de los desarrolladores:</h3>
+                    <li>
+                        <a href="https://www.linkedin.com/in/fabribenitez/">
+                            <img class="icono-footer" src="Fuentes/ICONS/linkedin.svg" alt="Logo de Linkedin">
+                            Marcelo Fabricio Benitez
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/jorge-sebastian-pryjmak/">
+                            <img class="icono-footer" src="Fuentes/ICONS/linkedin.svg" alt="Logo de Linkedin">
+                            Jorge Sebastian pryjmak
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/lucia-lopez-yanguas/">
+                            <img class="icono-footer" src="Fuentes/ICONS/linkedin.svg" alt="Logo de Linkedin">
+                            Lucia Lopez Yanguas
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/dylanortizcasco/">
+                            <img class="icono-footer" src="Fuentes/ICONS/linkedin.svg" alt="Logo de Linkedin">
+                            Dylan Alejandro Ortiz 
+                        </a>
+                    </li>
+
+                </ul>
+
+        
+            </section>
+        </section>
+    </footer>
     
 </body>
 </html>
