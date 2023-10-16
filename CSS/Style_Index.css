@@ -203,8 +203,8 @@ main section #banner{
 
 
 #caja_de_tarjetas{
-    width: 1800px;
-    height: 850px;
+    width: 1500px;
+    height: 550px;
     margin: 10px;
 
     display: flex;
@@ -268,7 +268,7 @@ main section #banner{
     color: white;
     font-size: 20px;
     border: none;
-    margin: 400px 10px 0px 0px;
+    margin: 350px 10px 0px 0px;
 }
 
 #boton_ver_más:hover{ 
@@ -298,8 +298,8 @@ main section #banner{
 
 
 #contenedor_de_alojamiento #caja_de_tarjetas section{
-    width: 1800px;
-    height: 700px;
+    width: 1500px;
+    height: 500px;
     margin: 10px;
     background-color: #270570; 
     border-radius: 20px;
@@ -312,10 +312,10 @@ main section #banner{
 }
 
 #contenedor_de_alojamiento #caja_de_tarjetas section .caja_de_alojamiento{
-    width: 300px;
-    height: 500px;
+    width: 250px;
+    height: 300px;
     display: flex;
-    margin: 10px;
+    margin: 20px;
     background-color: antiquewhite;
     border-radius: 20px;
 
@@ -326,8 +326,8 @@ main section #banner{
 }
 
 #contenedor_de_alojamiento .caja_de_alojamiento img{
-    width: 240px;
-    height: 250px;
+    width: 150px;
+    height: 110px;
     margin-top:10px;
 }
 
@@ -361,8 +361,8 @@ main section #banner{
 
 
 #contenedor_de_actividades #caja_de_tarjetas section{
-    width: 1800px;
-    height: 700px;
+    width: 1500px;
+    height: 500px;
     margin: 10px;
     background-color: #270570;
     border-radius: 20px;
@@ -375,10 +375,10 @@ main section #banner{
 }
 
 #contenedor_de_actividades #caja_de_tarjetas section .caja_de_actividades{
-    width: 300px;
-    height: 500px;
+    width: 250px;
+    height: 300px;
     display: flex;
-    margin: 10px;
+    margin: 20px;
     background-color: antiquewhite;
     border-radius: 20px;
 
@@ -389,8 +389,8 @@ main section #banner{
 }
 
 #contenedor_de_actividades .caja_de_actividades img{
-    width: 260px;
-    height: 210px;
+    width: 150px;
+    height: 110px;
     margin-top:10px;
 }
 
@@ -424,8 +424,8 @@ main section #banner{
 
 
 #contenedor_de_autos #caja_de_tarjetas section{
-    width: 1800px;
-    height: 700px;
+    width: 1500px;
+    height: 500px;
     margin: 10px;
     background-color: #270570; 
     border-radius: 20px;
@@ -438,10 +438,10 @@ main section #banner{
 }
 
 #contenedor_de_autos #caja_de_tarjetas section .caja_de_autos{
-    width: 300px;
-    height: 500px;
+    width: 250px;
+    height: 300px;
     display: flex;
-    margin: 10px;
+    margin: 20px;
     background-color: antiquewhite;
     border-radius: 20px;
 
@@ -452,8 +452,8 @@ main section #banner{
 }
 
 #contenedor_de_autos .caja_de_autos img{
-    width: 240px;
-    height: 250px;
+    width: 150px;
+    height: 110px;
     margin-top:10px;
 }
 
@@ -480,24 +480,24 @@ main section #banner{
 }
 
 #caja_nosotros #nosotros{
-    width: 1800px;
-    height: 970px;
+    width: 1550px;
+    height: 670px;
     background-color: #270570; 
     border-radius: 20px;
 }
 #caja_nosotros #nosotros h3{
-    margin: 20px 0px 40px 800px;
-    font-size: 70px;
+    margin: 20px 0px 40px 670px;
+    font-size: 60px;
     color: white;
 }
 
 #caja_nosotros #nosotros p{
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     padding: 20px;
 }
 #caja_nosotros #nosotros p b{
-    font-size: 25px;
+    font-size: 15px;
 }
 
 
