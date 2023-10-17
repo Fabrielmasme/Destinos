@@ -151,9 +151,14 @@ main section #banner{
         #formulario_de_busqueda label input{
             width: 180px;
             height: 60px;
+
             border-radius: 10px;
             border: none;
-            margin-right: 10px;
+
+            margin: 0 10px 0 10px;
+            padding: 10px;
+
+            font-size: 13px;
 }
 
 #formulario_de_busqueda form h2{
@@ -491,13 +496,15 @@ main section #banner{
     color: white;
 }
 
-#caja_nosotros #nosotros p{
+#caja_nosotros #nosotros ul{
     color: white;
     font-size: 20px;
     padding: 20px;
 }
-#caja_nosotros #nosotros p b{
-    font-size: 25px;
+#caja_nosotros #nosotros ul li{
+    font-size: 20px;
+    margin: 30px;
+    text-align: justify;
 }
 
 
@@ -534,10 +541,40 @@ footer a:hover{
 
 .footer-links section{
     margin-left: 15px;
+
 }
 
 .footer-links section form{
+    width: 400px;
+    height: 80px;
+
+    display: flex;
+    flex-direction: column;
+
+    font-size: 20px;
     margin-top: 20px;
+}
+
+.footer-links section form section{
+    height: 40px;
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.footer-links section form section label{
+    width: 100px;
+    height: 30px;
+    margin: 5px 10px 0 10px;
+    display: flex;
+    justify-content: space-evenly;
+} 
+
+    .footer-links section form section label input{
+        font-size: 15px;
+        border: none;
+        padding: 5px; 
 }
 
 #container-footer{
@@ -546,6 +583,30 @@ footer a:hover{
 }
 .footer-links{
     width: 700px;
+}
+
+.boton_footer{
+    height: 30px;
+    margin: 0 0 0 5px;
+    padding: 0 0 5px 0;
+    background-color: #006c8d;
+
+
+    border: none;
+    border-radius: 5px;
+    
+    color: white;
+}
+
+.boton_footer:hover{
+    background-color: #00c3ff;
+    color: #2A2F51;
+}
+
+.footer-links section form section img{
+    width: 35px;
+    height: 35px;
+    margin: 3px 15px 0 0;
 }
 
 /*Se ajusta el tamaño de los iconos del footer*/
