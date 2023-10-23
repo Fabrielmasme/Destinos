@@ -41,7 +41,7 @@
         <section id="barra_de_navegacion">
 
             <article>
-                <a  href="#"> <!--Hay que poner el link de la pagina de vuelos-->
+                <a  href="HTML/vuelos.html"> 
                     <img class="icono" src="Fuentes/ICONS/vuelos.svg" alt="Logo de vuelos">
                     Vuelos 
                 </a>
@@ -121,9 +121,8 @@
                     </label>  
 
                     <section class="caja_boton_form">
-                        <button id="boton_form_de_busqueda" type="button">
-                            Buscar
-                        </button>
+                            <input id="boton_form_de_busqueda" type="submit" value="Buscar">
+                        </input>
                     </section>
                     
                 </section>
@@ -180,12 +179,10 @@
                         <img src="Fuentes/IMG/Fotos de paisajes de argentina/Bariloche.jpg" alt="Mendoza">
                     </article>
 
-                    <!-- <section class="contenedor_boton_ver_más"> -->
+
                         <button id="boton_ver_más" type="button">
                             Ver Más
                         </button> 
-    
-                    <!-- </section> -->
 
                 </section>
     
@@ -375,33 +372,25 @@
                 <h3>
                     Nosotros
                 </h3>
-                <p>
-                    
-                    En Destinos, estamos dedicados a hacer realidad tus sueños de viaje. 
-                    <br>
-                    Somos un equipo apasionado de expertos en viajes con años de experiencia en la industria, y nuestra misión es proporcionarte experiencias de viaje inolvidables.
-                    <br>
-                    <br>
-                    <b> ¿Qué te ofrecemos? </b>
-                    <br>
-                    <br>
-                    <b> Vuelos: </b>Te conectamos con las mejores tarifas y opciones de vuelos, permitiéndote encontrar las rutas más convenientes y los precios más competitivos para tu próximo viaje.
-                    <br>
-                    <br>
-                    <b> Alojamiento: </b>Ofrecemos una cuidadosa selección de alojamientos que se adaptan a todos los gustos y presupuestos, desde hoteles boutique hasta apartamentos con encanto y albergues asequibles.
-                    <br>
-                    <br>
-                    <b> Actividades: </b> ¿Buscas experiencias únicas en tu destino? Te proporcionamos una amplia variedad de actividades emocionantes y culturales para que tu viaje sea verdaderamente inolvidable.
-                    <br>
-                    <br>
-                    <b> Alquiler de Autos: </b>Si deseas explorar a tu propio ritmo, te facilitamos el alquiler de autos en tu lugar de destino, brindándote la libertad de moverte como desees.
-                    <br>
-                    <br>
-                    En Destinos, creemos en la importancia de cada detalle para que tu viaje sea perfecto. Nuestros agentes de viajes están comprometidos en proporcionarte asesoramiento personalizado y servicio al cliente excepcional. Ya sea que estés planeando unas vacaciones en familia, una escapada romántica o un viaje de negocios, estamos aquí para convertir tus sueños de viaje en realidad.
-                    <br>
-                    Nuestro compromiso es ofrecerte calidad, confiabilidad y comodidad en cada viaje que emprendas. ¡Bienvenido a Destinos donde tus aventuras comienzan y los recuerdos duran toda la vida!"
+                <ul>
+                    <li>En Destinos, estamos dedicados a hacer realidad tus sueños de viaje. </li>
 
-                </p>
+                    <li>Somos un equipo apasionado de expertos en viajes con años de experiencia en la industria, y nuestra misión es proporcionarte experiencias de viaje inolvidables.</li>
+
+                    <li>¿Qué te ofrecemos?</li>
+
+                    <li>Vuelos: Te conectamos con las mejores tarifas y opciones de vuelos, permitiéndote encontrar las rutas más convenientes y los precios más competitivos para tu próximo viaje.</li>
+
+                    <li><b> Alojamiento:</b> Ofrecemos una cuidadosa selección de alojamientos que se adaptan a todos los gustos y presupuestos, desde hoteles boutique hasta apartamentos con encanto y albergues asequibles.</li>
+
+                    <li><b> Actividades: </b> ¿Buscas experiencias únicas en tu destino? Te proporcionamos una amplia variedad de actividades emocionantes y culturales para que tu viaje sea verdaderamente inolvidable.</li>
+
+                    <li><b> Alquiler de Autos: </b>Si deseas explorar a tu propio ritmo, te facilitamos el alquiler de autos en tu lugar de destino, brindándote la libertad de moverte como desees.</li>
+
+                    <li>En Destinos, creemos en la importancia de cada detalle para que tu viaje sea perfecto. Nuestros agentes de viajes están comprometidos en proporcionarte asesoramiento personalizado y servicio al cliente excepcional. Ya sea que estés planeando unas vacaciones en familia, una escapada romántica o un viaje de negocios, estamos aquí para convertir tus sueños de viaje en realidad.</li>
+                    <li>Nuestro compromiso es ofrecerte calidad, confiabilidad y comodidad en cada viaje que emprendas. ¡Bienvenido a Destinos donde tus aventuras comienzan y los recuerdos duran toda la vida!"</li>
+                </ul>
+            
             </article>
         </section>
         
@@ -422,16 +411,21 @@
                         <li><h4>0810-000-0000</h4></li>
                         <form action="" method="get">
                             <h4>Las mejores ofertas en su email:</h4>
-                            <label>
-                        
+                            <section>
+                                
                                 <img class="icono-footer" src="Fuentes/ICONS/email-1-svgrepo-com.svg" alt="Icono de email">
 
-                                <input type="text" placeholder="Ingrese su Email:" name="origen" required>
-
-                                <button type="button" name="button" >Subscribirse</button>
-
-                            </label>
-
+                                <label>
+                                    <input type="text" placeholder="Ingrese su Email:" name="origen" required>
+                                </label>
+                                    
+                                <label>
+                                    <input class="boton_footer" type="submit" name="button" value="Subscribirse" ></input>
+                                </label>    
+                                    
+                                
+                            
+                            </section>    
                         </form>
 
                     </ul>
@@ -446,7 +440,7 @@
                     <li><a href="#">Actividades</a></li>
                     <li><a href="#">Autos</a></li>
                     <li><a href="#">Nosotros</a></li>
-            </ul>
+                </ul>
             </section>
 
             <section class="footer-links">
