@@ -190,7 +190,7 @@ main section #banner{
 /*Se le da estilos a la seccion de vuelos*/
 #contenedor_de_vuelos{
     width: 100%;
-    height: 1000px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -275,7 +275,9 @@ main section #banner{
     border: none;
     margin: 350px 10px 0px 0px;
 }
-
+#boton_ver_más a{ 
+    color: white;
+}
 #boton_ver_más:hover{ 
     background-color: #e74a3c;
 } 
@@ -286,7 +288,7 @@ main section #banner{
 
 #contenedor_de_alojamiento{
     width: 100%;
-    height: 1000px;
+    height: 600px;
 
     display: flex;
     flex-direction: column;
@@ -349,7 +351,7 @@ main section #banner{
 
 #contenedor_de_actividades{
     width: 100%;
-    height: 1000px;
+    height: 600px;
 
     display: flex;
     flex-direction: column;
@@ -412,7 +414,7 @@ main section #banner{
 
 #contenedor_de_autos{
     width: 100%;
-    height: 1000px;
+    height: 600px;
 
     display: flex;
     flex-direction: column;
@@ -467,42 +469,6 @@ main section #banner{
     padding: 10px;
     margin: 20px;
     
-}
-
-
-
-
-
-/*NOSOTROS*/
-#caja_nosotros{
-    width: 100%;
-    height: 1000px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#caja_nosotros #nosotros{
-    width: 1550px;
-    height: 670px;
-    background-color: #270570; 
-    border-radius: 20px;
-}
-#caja_nosotros #nosotros h3{
-    margin: 20px 0px 40px 670px;
-    font-size: 60px;
-    color: white;
-}
-
-#caja_nosotros #nosotros ul{
-    color: white;
-    font-size: 15px;
-    padding: 20px;
-}
-#caja_nosotros #nosotros p b{
-    font-size: 25px;
 }
 
 

@@ -36,7 +36,7 @@ header a:hover{
 
 main{
     width: 100%;
-    height: 2500px;
+    height: 1000px;
  }
 
 /*Palabra destinos (Logo)*/
@@ -71,6 +71,7 @@ main{
 } 
 
 
+
 nav{
     height:60px ;
     width: 100%;
@@ -101,84 +102,46 @@ nav #barra_de_navegacion article :hover{
 
     color:white;
  } 
- main section #banner{
-    width: 100%;
-    height: 300px;
- }
- main .caja_padre_autos{
-    width: 70%;
-    height: 2100px;
-    margin: auto;
-}
 
- main .caja_autos{
+
+/*NOSOTROS*/
+#caja_nosotros{
     width: 100%;
-    height: 300px;
+    height: 1000px;
+
     display: flex;
-    flex-direction: row;
-    margin: 20px 0 20px 0;
-    border: 1px solid rgb(197, 197, 197);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-/*Se da estilos a las cajas interiores*/
-main .imagen_de_auto{
-    width: 300px;
-    height: 300px;
+#caja_nosotros #nosotros{
+    width: 1550px;
+    height: 670px;
+    background-color: #270570; 
+    border-radius: 20px;
 }
-main .imagen_de_auto img{
-    width:100% ;
-    height: 100%;
-    object-fit: cover;
-}
-
-
-main .info_de_auto{
-    width: 800px;
-    height: 300px;
-    border-right: 1px solid grey;
-}
-main .info_de_auto ul{
-    font-size: 20px;
-    margin: 20px;
-}
-main .info_de_auto h2{
-    margin: 20px;
-}
-main .info_de_auto ul li{
-    margin: 20px;
-}
-
-
-main .precio_ver_oferta{
-    width: 250px;
-    font-size: 20px;
-    padding:20px ;
-    border-left:none;
-}
-main .precio_ver_oferta ul li{
-    margin: 20px;
+#caja_nosotros #nosotros h1{
+    font-size: 60px;
+    color: white;
     text-align: center;
 }
 
-main .precio_ver_oferta .boton_ver_oferta{
-    margin: 20px 0 0 30px;
-}
-
-
-.boton_ver_oferta{ 
-    width: 150px;
-    height: 50px;
-    border-radius: 50px;
-    background-color:rgb(101, 212, 175);
+#caja_nosotros #nosotros ul{
     color: white;
+    font-size: 15px;
+    padding: 20px;
+    text-align: left;
+}
+#caja_nosotros #nosotros ul li{
+    margin: 35px;
+    font-size: 15px;
+}
+#caja_nosotros #nosotros ul b{
     font-size: 20px;
-    border: none;
-
 }
 
-.boton_ver_oferta:hover{ 
-    background-color:rgb(0, 145, 96) ;
-}
+
 
 
 footer{
