@@ -526,7 +526,7 @@ footer a:hover{
     #formulario_de_busqueda{
         /* margin: 257px 0 0 0 ; */
         width: 100%;
-        height: 500px;
+        height: 600px;
         background-color: #a780ff;
 
         display: flex;
@@ -544,7 +544,7 @@ footer a:hover{
 
     #formulario_de_busqueda form{
         width: 400px;
-        height: 450px;
+        height: 550px;
         background-color: #270570;
 
         border-radius: 10px;
@@ -590,6 +590,7 @@ footer a:hover{
         color: white;
         font-size: 20px;
         border: none;
+        margin: 20px 0 0 290px;
     }
 
     /*Se le da el efecto al boton BUSCAR del formulario*/
